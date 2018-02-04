@@ -1,0 +1,17 @@
+h1{
+color: brown;
+}
+
+.sutsutit{
+display: inline;
+padding-right: 10px;
+}
+
+.motha{
+    font-size: 60px;
+    color: red;
+}
+
+.nounderline{
+text-decoration: none;
+}

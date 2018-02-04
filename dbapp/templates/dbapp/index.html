@@ -1,0 +1,14 @@
+{% extends 'dbapp/base.html' %}
+
+{% block title %}
+Programming Database
+{% endblock %}
+
+{% block content %}
+{% for category in categories %}
+<h2>{{ category.name }}</h2>
+{% for item in category.items.all %}
+<p class="sutsutit"><a href="{% url 'dbapp:details' item_id=item.id %}">{{ item.name }}</a></p>
+{% endfor %}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'dbapp/base.html' %}
+
+{% block title %}
+{{ item.name }} - Programming Database
+{% endblock %}
+
+{% block content %}
+{% if item %}
+{% if item.image %}
+<img src="{{ item.image.url }}" alt="{{ item.name }}">
+{% else %}
+{% endif %}
+<h3>{{ item.name }}</h3>
+<p>{{ item.desc }}</p>
+{% else %}
+<p class="motha">Invalid URL!!</p>
+{% endif %}
+{% endblock %}
